@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.clear{
+    clear: both;
+}
+
+header{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-bottom: 1px solid #ccc;
+}
+.center{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+.logo{
+    width: 10%;
+    float: left;
+}
+.logo h1{
+    font-size: 25px;  
+    padding: 12px 0;      
+}
+.logo a{
+    color: white;
+    text-decoration: none;
+}
+nav{
+    width: 90%;
+    float: left;
+}
+nav ul{
+    list-style: none;
+    text-align: right;
+    padding: 15px 0;
+}
+nav ul li{
+    display: inline;
+    padding: 0 15px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+section.banner{
+    width: 100%;
+    background-image: url(../img/banner1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+}
+section.sobre{
+    width: 100%;
+    padding: 20px 0;
+    background-color: #ccc;
+    text-align: center;        
+}
+.sobre h1{        
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #249de3;
+    border-bottom: 2px solid #249de3;
+    display: inline;
+}
+section.text-sobre{
+    width: 100%;
+    padding: 20px 10%;
+    text-align: center;
+}
+.text-sobre p{
+    font-size: 18px;
+    color: rgb(80, 80, 80);
+    margin-bottom: 10px;
+}
+section.contato{
+    padding: 30px 0;
+}
+section.contato > .center{
+    max-width: 900px;
+}
+.contato input[type=text]{
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ccc;
+    padding-left: 8px;
+    margin-top: 10px;
+    font-size: 15px;
+    display: inline-block;
+    outline: 0;
+}
+.contato textarea{
+    width: 100%;
+    height: 130px;
+    border: 1px solid #ccc;
+    padding-left: 8px;
+    margin-top: 10px;
+    font-size: 15px;
+    display: inline-block;
+    outline: 0;
+    resize: vertical;
+}
+.contato input[type=submit] {
+    cursor: pointer;
+    background-color: #249de3;
+    color: white;
+    border: 0;
+    width: 100px;
+    height: 30px;
+    display: block;
+    border-radius: 30px;
+    margin-top: 15px;
+    font-size: 15px;
+}
+section.pre-footer{
+    width: 100%;
+    padding: 20px 0;
+    background-color: gray;
+    text-align: center;
+}
+.pre-footer p{
+    font-size: 22px;
+    color: white;
+}
+footer{
+    width: 100%;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+}
+footer p{
+    font-size: 17px;
+    color: white;
+}
+@media screen and (max-width: 768px){
+    nav ul li{        
+        padding: 0 5px;
+    }
+}
