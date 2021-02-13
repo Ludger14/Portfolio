@@ -4,21 +4,32 @@
     <title>Portfólio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <div class="center">
             <div class="logo">
-                <h1><a href="#">JELUD</a></h1>
+                <!--<h1><a href="#">JELUD</a></h1>-->
             </div>
-            <nav>
+            <nav class="desktop">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Portfólio</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Apresentação</a></li>
+                    <li><a href="#">Formação</a></li>
+                    <li><a href="#">Experiência</a></li>
+                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#">Fale comigo</a></li>
+                </ul>
+            </nav>
+            <nav class="mobile">
+                <i class="fa fa-bars"></i>
+                <ul>                    
+                    <li><a href="#">Apresentação</a></li>
+                    <li><a href="#">Formação</a></li>
+                    <li><a href="#">Experiência</a></li>
+                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#">Fale comigo</a></li>
                 </ul>
             </nav>
             <div class="clear"></div>
@@ -27,64 +38,143 @@
     <section class="banner"></section>
     <section class="sobre">
         <div class="center">
-            <h1>Quem Somos</h1>
-        </div>
+            <div class="sobre-pic-outter">
+                <div class="sobre-pic">
+                    <div class="sobre-icons">
+                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="sobre-icons">
+                        <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="sobre-icons">
+                        <a href="#"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="sobre-description">
+                <h1>Ludger Jean Louis</h1>
+                <h2>Desenvolvedor FullStack</h2>
+                <p>Cras porttitor lacus ut tortor mattis malesuada. Nam venenatis urna at ex volutpat bibendum. Mauris augue lacus, vestibulum eget tempus at, ultrices ut purus. Vestibulum auctor arcu at enim tincidunt, ac ultrices arcu dictum. Vestibulum lorem massa, scelerisque sit amet volutpat a, facilisis at urna. Nullam eu leo sem. Curabitur eros orci, pretium at diam non, ultrices condimentum lacus. Vivamus eleifend tortor ac molestie gravida. Cras ultricies sem sit amet nibh tristique commodo. Nulla sit amet sagittis mi, vitae iaculis felis. Aenean pharetra sit amet erat eget ornare.</p>
+            </div>
+            <div class="clear"></div>
+        </div>        
     </section>
-    <section class="text-sobre">
+    <section class="formacao">
         <div class="center">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut libero arcu, lacinia id blandit sed, bibendum quis est. Etiam eget ante dui. Morbi augue quam, ullamcorper non nisi ac, elementum porta elit. Vivamus ac metus porta, molestie mauris eu, elementum lacus. Nam vel nibh et mauris efficitur tempus. Maecenas felis orci, luctus vitae pulvinar commodo, aliquet eu enim. Mauris vel lacus eu nibh venenatis dignissim eu eu lorem. Aenean vehicula lacus nibh, eget fringilla orci tempus sit amet. Pellentesque venenatis diam ut nulla imperdiet mattis.</p>
+            <h3>Formação</h3>
+            <div class="form-content">
+                <div class="borda"></div>
+                <div class="text">
+                    <p class="ano">2011-2016</p>
+                    <p class="profisao">Ciência da Computação</p>
+                    <p class="nome-university">Universidade Federal do Rio de Janeiro</p>
+                </div>                
+            </div>
 
-            <p>Cras porttitor lacus ut tortor mattis malesuada. Nam venenatis urna at ex volutpat bibendum. Mauris augue lacus, vestibulum eget tempus at, ultrices ut purus. Vestibulum auctor arcu at enim tincidunt, ac ultrices arcu dictum. Vestibulum lorem massa, scelerisque sit amet volutpat a, facilisis at urna. Nullam eu leo sem. Curabitur eros orci, pretium at diam non, ultrices condimentum lacus. Vivamus eleifend tortor ac molestie gravida. Cras ultricies sem sit amet nibh tristique commodo. Nulla sit amet sagittis mi, vitae iaculis felis. Aenean pharetra sit amet erat eget ornare.</p>
+            <div class="form-content">
+                <div class="borda"></div>
+                <div class="text">
+                    <p class="ano">2004-2009</p>
+                    <p class="profisao">Análise de sistemas</p>
+                    <p class="nome-university">Centre de Formation Professionnelle d'Haiti</p>
+                </div>                
+            </div>
         </div>
     </section>
-    <section class="sobre">
+
+    <section class="experiencia">
         <div class="center">
-            <h1>Serviços</h1>
+            <h3>Experiência</h3>
+            <div class="exp-content">
+                <div class="borda-exp"></div>
+                <div class="text-exp">
+                    <p class="ano">2011-2013</p>
+                    <p class="profisao">Web design</p>
+                    <p class="nome-university">Fagga GL-Evens</p>
+                </div>                
+            </div>
+
+            <div class="exp-content">
+                <div class="borda-exp"></div>
+                <div class="text-exp">
+                    <p class="ano">2014-2015</p>
+                    <p class="profisao">Administrador do projeto Haiti Aqui</p>
+                    <p class="nome-university">Viva Rio</p>
+                </div>                
+            </div>
         </div>
     </section>
-    <section class="text-sobre">
+    <section class="projetos">
         <div class="center">
-            <img src="img/servicos.jpg" alt="Desenvolvimento web">
-            <img src="img/servicos.jpg" alt="Desenvolvimento web">
-            <img src="img/servicos.jpg" alt="Desenvolvimento web">
+            <h3>Projetos</h3>
+            <div class="content">
+                <div class="proj-content">
+                    <img src="img/trabalho.jpg" alt="trabalho realizado">
+                    <h4>Hera</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ut animi eaque repudiandae, ipsa architecto, quidem reprehenderit.</p>
+                    <div class="button">
+                        <button>Repositório</button>
+                        <button>Ver Demo</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="proj-content">
+                    <img src="img/trabalho.jpg" alt="trabalho realizado">
+                    <h4>Hera</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ut animi eaque repudiandae, ipsa architecto, quidem reprehenderit.</p>
+                    <div class="button">
+                        <button>Repositório</button>
+                        <button>Ver Demo</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="proj-content">
+                    <img src="img/trabalho.jpg" alt="trabalho realizado">
+                    <h4>Hera</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ut animi eaque repudiandae, ipsa architecto, quidem reprehenderit.</p>
+                    <div class="button">
+                        <button>Repositório</button>
+                        <button>Ver Demo</button>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
         </div>
-    </section>
-    <section class="sobre">
-        <div class="center">
-            <h1>Projetos Realizados</h1>
-        </div>
-    </section>
-    <section class="text-sobre">
-        <div class="center">
-            <img src="img/projetos.jpg" alt="Desenvolvimento web">
-            <img src="img/projetos.jpg" alt="Desenvolvimento web">
-            <img src="img/projetos.jpg" alt="Desenvolvimento web">
-        </div>
-    </section>
-    <section class="sobre">
-        <div class="center">
-            <h1>Entre em Contato</h1>
-        </div>
-    </section>
+    </section>  
     <section class="contato">
         <div class="center">
-            <form>
-                <input type="text" name="nome" placeholder="Insira o seu nome">
-                <input type="text" name="nome" placeholder="Insira o seu email">
-                <textarea placeholder="Mensagem"></textarea>
-                <input type="submit" name="acao" value="Enviar!">
-            </form>
+            <h3>Contato</h3>
+            <div class="w50">
+                <p>
+                    Quer entrar em contato comigo? Preencha o formulário ao lado e entrarei em contato o mais rápido possível. Você também pode me encontrar nas seguintes redes sociais:
+                </p>
+                <p>
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </p>
+            </div>
+            <div class="w50">
+                <form>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" placeholder="Insira o seu nome">
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" placeholder="Insira o seu email">
+                    <label for="assunto">Assunto:</label>
+                    <input type="text" name="assunto" placeholder="Insira o seu assunto">
+                    <textarea placeholder="Mensagem"></textarea>
+                    <input type="submit" name="acao" value="Enviar!">
+                </form>
+            </div>
+            <div class="clear"></div>
         </div>
-    </section>
-    <section class="pre-footer">
-        <div class="center">
-            <p>Tel.:21 98014-6399</p>
-        </div>
-    </section>
-    <footer>
-        <div class="center">
-            <p>© 2021, Ludger Jean Louis, Todos os direitos reservados!</p>
-        </div>
-    </footer>
+    </section>  
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/menu_mobile.js"></script>  
 </body>
 </html>
