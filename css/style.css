@@ -80,22 +80,24 @@ section.sobre{
     flex-direction: row;
 }
 .sobre-pic-outter{
-    width: 30%;      
+    width: 30%;  
+    position: relative;    
 }
 .sobre-pic{
     width: 200px;
     height: 200px;
     border-radius: 50%;
     background-color: #ccc;
-    position: absolute;
-    bottom: 0;    
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    background-image: url("../img/lud.jpg");
+    background-image: url(../img/lud.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 160px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
 }
 .sobre-icons{
     width: 40px;
@@ -400,22 +402,22 @@ nav.mobile{
 	nav.mobile li a{
 		text-decoration: none;
 		color: black;
-	}
-    .sobre > .center{       
-        display: inline-flex;
-        text-align: left;
+	}  
+    section.sobre{
+        text-align: center;
+    } 
+    .sobre > .center{          
         flex-direction: column;
-        align-items: center;
     }
     .sobre-pic-outter{
-        width: 50%; 
-        margin-bottom: 15px;     
+        width: 100%;             
     }
-    .sobre-pic{        
+    .sobre-pic{         
         position: relative;
+        bottom: 50px;        
     }       
     .sobre-description{
-        width: 90%;    
+        width: 100%;          
     }
     .content{
         width: 100%;
