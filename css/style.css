@@ -7,10 +7,38 @@
 html,body{
     height: 100%;
 }
-.clear{
-    clear: both;
+.sucesso{
+	display: none;	
+	padding: 15px 2%;	
+	color: #56b700;
+	background-color: #dff2bf;
+	font-weight: bold;
+	font-size: 15px;	
 }
-
+.erro{
+	display: none;	
+	padding: 15px 2%;	
+	color: #921e1e;
+	background-color: #f1c3c3;
+	font-weight: bold;
+	font-size: 15px;	
+}
+.overlay-loading{
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 99999;
+	background-color: rgba(0,0,0,0.4);
+}
+.overlay-loading img{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
 header{
     width: 100%;
     background-color: rgba(0, 0, 0, 0.9);
@@ -21,15 +49,18 @@ header{
     margin: 0 auto;
     padding: 0 2%;
 }
+header > .center{
+    display: flex;
+    padding: 5px 2%;
+}
 .logo{
+    width: 10%;      
+}
+.logo img{
     width: 60px;
-    float: left;
     height: 60px;
+    object-fit: contain;
     border-radius: 50%;
-    background-image: url("../img/lud.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
 }
 .logo h1{
     font-size: 25px;  
@@ -39,9 +70,8 @@ header{
     color: white;
     text-decoration: none;
 }
-nav.desktop{
-    width: 90%;
-    float: left;
+nav{
+    width: 90%;    
 }
 nav.desktop ul{
     list-style: none;
@@ -78,6 +108,7 @@ section.sobre{
     max-width: 800px; 
     display: flex;  
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .sobre-pic-outter{
     width: 30%;  
@@ -92,12 +123,13 @@ section.sobre{
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    margin: 0 auto;
     position: absolute;
-    bottom: 160px;
+    top: 0;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .sobre-icons{
     width: 40px;
@@ -118,7 +150,7 @@ section.sobre{
 }
 .sobre-icons i a{     
     text-decoration: none;
-    color: #000; 
+    color: #000;     
 }
 .sobre-description{
     width: 70%;    
@@ -144,7 +176,6 @@ section.sobre{
     font-weight: lighter; 
     padding: 10px 0;  
 }
-
 .formacao{
     width: 100%;
     padding: 30px 0;
@@ -197,7 +228,6 @@ section.sobre{
     text-transform: uppercase; 
     padding: 2px 0;   
 }
-
 .experiencia{
     width: 100%;
     padding: 30px 0;
@@ -262,9 +292,13 @@ section.sobre{
     font-weight: lighter; 
     padding: 10px 0;  
 }
+.proj{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 .content{
-    width: 33.3%;
-    float: left;
+    width: 33.3%;    
 }
 .proj-content{
     width: 90%;
@@ -305,56 +339,86 @@ section.contato{
     padding: 30px 0;
     background-color: black;
 }
-.contato h3{     
+.contato h2{     
     font-size: 25px;
     color: #707070;
     opacity: 1;     
     font-weight: lighter; 
     padding: 10px 0;  
 }
-.w50{
+.info-form{
+    display: flex;
+    flex-direction: row;
+}
+.info{
     width: 50%;
-    float: left;
+    padding: 50px 20px 30px 0;   
 }
-.w50 p{
-    font-size: 18px;
+.info p{
     color: #707070;
-    opacity: 1;     
-    font-weight: lighter;    
-    line-height: 1.8;
-    margin-top: 30px;
+    font-size: 17px; 
+    margin-bottom: 10px; 
 }
-.w50 p a{
+.sociais{
+    display: flex;
+    flex-direction: row;
+}
+.redes{
+    width: 40px;
+    height: 40px;    
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 5px;
+    position: relative;
+    top: 0;    
+}
+.redes i{    
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);  
     text-decoration: none;
+    color: #000; 
+}
+.redes i a{     
+    text-decoration: none;
+    color: #000; 
+}
+.form{
+    width: 50%;
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+label{
     color: white;
-    padding: 0 10px;
+    font-size: 17px;    
 }
-.contato label{
-    color: white;    
-}
-.contato input[type=text]{
+.form input[type=text]{
     width: 100%;
     height: 30px;
     border: 1px solid #ccc;
     padding-left: 8px;
-    margin: 10px 0;
+    margin: 5px 0;
     font-size: 15px;
     display: inline-block;
     outline: 0;
     border-radius: 5px;
 }
-.contato textarea{
+.form textarea{
     width: 100%;
     height: 130px;
     border: 1px solid #ccc;
     padding-left: 8px;
-    margin-top: 10px;
+    margin-top: 5px;
     font-size: 15px;
     display: inline-block;
     outline: 0;
     resize: vertical;
 }
-.contato input[type=submit] {
+.form input[type=submit] {
     cursor: pointer;
     background-color: #585858;
     color: white;
@@ -363,8 +427,9 @@ section.contato{
     height: 30px;
     display: block;
     border-radius: 30px;
-    margin-top: 15px;
+    margin: 15px auto;
     font-size: 15px;
+    outline: 0;
 }
 nav.mobile{
     display: none;
@@ -374,8 +439,8 @@ nav.mobile{
         display: none;
     }    
     nav.mobile{
-		display: block;
-		float: right;
+		display: block;	
+        text-align: right;	
 	}
 	nav.mobile i{
 		font-size: 25px;
@@ -389,7 +454,7 @@ nav.mobile{
 		position: absolute;
 		left: 0;
 		z-index: 999;
-		top: 60px;
+		top: 75px;
 		background-color: white;
 		list-style: none;
 		width: 100%;
@@ -411,13 +476,10 @@ nav.mobile{
     }
     .sobre-pic-outter{
         width: 100%;             
-    }
-    .sobre-pic{         
-        position: relative;
-        bottom: 50px;        
-    }       
+    }           
     .sobre-description{
-        width: 100%;          
+        width: 100%; 
+        margin-top: 130px;         
     }
     .content{
         width: 100%;
@@ -427,13 +489,14 @@ nav.mobile{
     .proj-content{        
         display: inline-flex;       
     }
-    .w50{
-        float: none;
-        width: 90%;        
-        margin: 15px auto;
+    .info-form{
+        flex-direction: column;
     }
-    .w50 p{
-        margin: 10px 0;
+    .info{
+        width: 100%;
+    }
+    .form{
+        width: 100%;
     }
     
 	
